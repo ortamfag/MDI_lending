@@ -63,7 +63,7 @@
     .why__text-item
         display: flex
         align-items: center
-        justify-content: flex-end
+        justify-content: center
         
         &:nth-child(2n + 2)
             justify-content: center
@@ -81,6 +81,15 @@
 
     .why__text p
         text-align: center
+
+@media (max-width: 760px)
+    .why__title
+        font-size: 20px
+        margin-bottom: 0px
+
+    .why__subtitle
+        font-size: 14px
+
 
 @media (max-width: 630px)
     .why__text
