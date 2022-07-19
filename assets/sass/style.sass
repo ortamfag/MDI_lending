@@ -18,18 +18,28 @@ body
 @import components/_fixed
 @import components/_catalog
 @import components/_why
+@import components/_brand
+@import components/_how
+@import components/_footer
+@import components/_popup
 
-.nav, .header, .catalog, .why
+.nav, .header, .catalog, .why, .brand, .footer
     padding: 0px 300px
 
+.how
+    padding: 0px 580px
+    
+.noscroll
+    overflow-y: hidden
+
 @media (max-width: 1900px)
-    .nav, .header
+    .nav, .header, .catalog, .why, .brand, .footer
         padding: 0px 15%
 
 @media (max-width: 1650px)
-    .nav, .header
+    .nav, .header, .catalog, .why, .brand, .footer
         padding: 0px 8%
 
 @media (max-width: 750px)
-    .nav, .header
+    .nav, .header, .catalog, .why, .brand, .how, .footer
         padding: 0px 5%

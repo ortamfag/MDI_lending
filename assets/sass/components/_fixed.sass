@@ -1,11 +1,11 @@
 .fixed 
     padding: 5px 3% 5px 3%
-    background-color: #333333
+    background-color: #255be5
     display: flex
     transform: translateY(-150%) !important
     transition: 0.4s all
     align-items: center
-    justify-content: space-around
+    justify-content: space-between
     position: fixed
     width: 75%
     margin: auto
@@ -61,6 +61,7 @@
       display: flex
       align-items: center
       justify-content: space-between
+      width: 100%
 
       &-email
         color: $white
@@ -69,20 +70,20 @@
 
     & img
         cursor: pointer
-        width: 90px
-        height: 90px
+        width: 100%
 
 
     & button
         text-transform: uppercase
         color: $white
-        background: rgb(255,146,0)
-        background: linear-gradient(0deg, rgba(255,146,0,1) 0%, rgba(255,190,0,1) 90%)
+        background: #ff6b00
         border-radius: 10px
+        width: 15%
+        justify-content: center
+        text-align: center
         border: 0
         outline: 0
         padding: 20px
-        box-shadow: 0px 10px 20px -10px #ff9200
         display: flex
         margin: 0 auto
         @include bold

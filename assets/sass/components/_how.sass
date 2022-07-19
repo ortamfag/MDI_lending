@@ -1,0 +1,73 @@
+.how
+    background-color: $white
+    position: relative
+
+    &__inner
+        padding: 100px 0px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 120px
+
+        &-text 
+            margin-right: 40px
+            
+            & h2
+                color: #1f1f1f
+                @include bold
+                font-size: 34px
+                margin-bottom: 30px
+                text-align: center
+
+            & p
+                @include medium
+                color: $white
+                font-size: 16px
+                margin-bottom: 20px
+                color: #1f1f1f
+                
+
+            & span
+                color: #1f1f1f
+
+    &__contact p
+        margin-bottom: 5px !important
+
+        & span
+            color: $white
+
+                    
+
+.official
+    @include bold
+
+#howLink
+    position: absolute
+    top: -150px
+
+@media (max-width: 1280px)
+    .how__inner
+        flex-direction: column
+
+        & img
+            margin-top: 30px
+
+    .how__inner-text
+        margin-right: 0px
+
+    .how__inner-text h2
+        text-align: center
+
+    .how__inner-text p
+        text-align: left
+
+@media (max-width: 610px)
+    .how
+        padding: 0px 0px 100px 0px
+
+        &__inner img
+            width: 100%
+
+@media (max-width: 530px)
+    .how__inner-text h2
+        font-size: 24px
