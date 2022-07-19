@@ -1,0 +1,99 @@
+.why
+
+    background-color: $white
+    
+    &__wrapper
+        padding: 100px 0px 100px 0px
+
+    &__title 
+        @include bold
+        font-size: 34px
+        color: #1f1f1f
+        text-align: center
+        margin-bottom: 45px
+
+    &__text
+        margin: 0 auto
+        text-align: center
+        color: #1f1f1f
+
+        & h1
+            @include bold
+            font-size: 24px
+            line-height: 1.417
+            margin: 0 auto
+
+        & p
+            @include medium
+            font-size: 16px
+            line-height: 1.625
+            text-align: left
+
+        &-wrapper
+            display: grid
+            grid-template-columns: 50% 50%
+            grid-row-gap: 30px
+            padding: 50px 0px 0px 0px
+            justify-content: center
+            margin: 0 auto
+            width: 80%
+
+
+        &-item
+            display: flex
+            align-items: center
+            justify-content: center
+
+
+            & img
+                width: 50px
+                height: 50px
+                margin-right: 20px
+
+        &-inner
+            display: flex
+            flex-direction: column
+            width: 300px
+
+            & p:nth-child(1)
+                @include bold
+        
+@media (max-width: 1655px)
+
+    .why__text-item
+        display: flex
+        align-items: center
+        justify-content: center
+        
+        &:nth-child(2n + 2)
+            justify-content: center
+
+
+@media (max-width: 968px)
+    .why__text-wrapper
+        grid-template-columns: 100%
+
+    .why__text-item
+        flex-direction: column
+        & img
+            margin-right: 0px
+            margin-bottom: 10px
+
+    .why__text p
+        text-align: center
+
+@media (max-width: 760px)
+    .why__title
+        font-size: 20px
+        margin-bottom: 0px
+
+    .why__subtitle
+        font-size: 14px
+
+
+@media (max-width: 630px)
+    .why__text
+        padding: 30px 0px
+
+        & h1
+            font-size: 18px

@@ -1,0 +1,43 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none
+
+p
+    line-height: 26px
+
+body
+    background-color: #fdf2e9
+
+@import components/_const
+@import components/_nav
+@import components/_header
+@import components/_fixed
+@import components/_catalog
+@import components/_why
+@import components/_brand
+@import components/_how
+@import components/_footer
+@import components/_popup
+
+.nav, .header, .catalog, .why, .brand, .footer, .how
+    padding: 0px 300px
+
+
+.noscroll
+    overflow-y: hidden
+
+@media (max-width: 1900px)
+    .nav, .header, .catalog, .why, .brand, .footer, .how
+        padding: 0px 15%
+
+@media (max-width: 1650px)
+    .nav, .header, .catalog, .why, .brand, .footer, .how
+        padding: 0px 8%
+
+@media (max-width: 750px)
+    .nav, .header, .catalog, .why, .brand, .how, .footer
+        padding: 0px 5%

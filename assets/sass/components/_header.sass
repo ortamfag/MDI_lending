@@ -1,0 +1,227 @@
+.body__wrapper
+
+    background-image: url('../img/background.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 100%
+
+.header
+
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+
+        &-item
+            
+
+            & h2
+                @include bold
+                font-size: 44px
+                text-align: left
+                color: $white
+                min-height: 10vh
+                line-height: 1.417
+                margin-bottom: 15px
+                width: 100%
+                text-transform: uppercase
+
+            & h3
+                @include medium
+                font-size: 24px
+                text-align: left
+                color: $white
+                line-height: 1.417
+                width: 100%
+                text-transform: uppercase
+
+                &:nth-child(2)
+                    margin-bottom: 80px
+
+                &:nth-child(4)
+                    margin-top: 80px
+                    padding-bottom: 135px
+                    
+
+
+            & button
+                text-transform: uppercase
+                max-width: 100%
+                min-width: 55%
+                color: $white
+                background: #ff6b00
+                
+                border-radius: 10px
+                border: 0
+                outline: 0
+                padding: 25px
+               
+                display: flex
+                justify-content: center
+                align-items: center
+                @include bold
+                font-size: 20px
+                cursor: pointer
+                margin-top: 30px
+
+                &:hover
+                    transition: 0.4s
+                    box-shadow: 0px 10px 20px -10px #ff9200
+
+    &__text
+        padding: 0px 0px 50px 0px
+        text-align: center
+        color: $white
+
+        & h1
+            @include bold
+            font-size: 24px
+            line-height: 1.417
+            margin: 0 auto
+
+        & p
+            @include medium
+            font-size: 16px
+            line-height: 1.625
+            text-align: left
+
+        &-wrapper
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+        &-item
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            margin-bottom: 50px
+            
+            &:nth-child(2n + 2)
+                justify-content: center
+
+            &:last-child
+                margin-bottom: 0px
+
+
+            & img
+                width: 50px
+                height: 50px
+                margin-right: 20px
+
+        &-inner
+            display: flex
+            flex-direction: column
+            width: 300px
+
+            & p:nth-child(1)
+                @include bold
+        
+
+@media (max-width: 1655px)
+
+    .header__text-item
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        
+        &:nth-child(2n + 2)
+            justify-content: center
+
+@media (max-width: 1530px)
+
+    .header__inner-item h2
+        font-size: 44px
+        width: 100%
+
+    .header__wrapper
+        padding: 0 50px
+
+
+@media (max-width: 1450px)
+    .header__inner-item button
+        margin-top: 25px
+
+@media (max-width: 1435px)
+    .header__inner-item button
+        min-height: 8vh
+        align-items: center
+
+
+@media (max-width: 1200px)
+    .header__inner
+        flex-direction: column
+        align-items: center
+
+    .header__inner-item h3:nth-child(4)
+        padding-bottom: 0px
+
+    .header__text-wrapper
+        padding-top: 50px
+        padding-bottom: 50px
+@media (max-width: 1130px)
+    .header__inner-item button
+        width: 100%
+    .header__inner
+        flex-direction: column
+
+        &-item
+            margin-bottom: 50px
+
+            & h2
+                min-height: 0vh
+                width: 100%
+                font-size: 30px
+
+@media (max-width: 968px)
+    .header__text-wrapper
+        grid-template-columns: 100%
+
+    .header__text-item
+        flex-direction: column
+        & img
+            margin-right: 0px
+            margin-bottom: 10px
+
+    .header__text p
+        text-align: center
+
+    .header__inner-item button
+        width: 100%
+
+@media (max-width: 760px)
+    .header__inner-item button
+        width: 100%
+
+    .header__inner-item h2
+        font-size: 26px
+
+    .header__inner-item h3:nth-child(2),.header__inner-item h3:nth-child(4)
+        font-size: 14px
+        margin-bottom: 30px
+        margin-top: 30px
+
+    .header__inner-item
+        margin-bottom: 0px
+
+@media (max-width: 630px)
+    .header__inner-item h2
+        font-size: 18px
+    
+    .header__inner-item button
+        min-height: 0vh
+        font-size: 14px
+
+    .header__text
+        padding: 30px 0px
+
+        & h1
+            font-size: 18px
+
+
+@media (max-width: 450px)
+    .header__inner-item button
+        padding: 15px
+        width: 100%
+
+    .header__inner-item h2
+        font-size: 15px

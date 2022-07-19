@@ -1,0 +1,44 @@
+.footer
+    background-color: #ff6b00
+
+
+
+    &__wrapper
+        padding-top: 30px !important
+        padding-bottom: 30px !important
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        & a, p
+            @include medium
+            font-size: 16px
+            color: $white
+
+        & a
+            margin-right: 40px
+
+    &-left
+        padding-left: 100px
+
+    &-right
+        padding-right: 100px
+
+
+@media (max-width: 968px)
+    .footer__wrapper
+        flex-direction: column
+
+        & p
+            text-align: center
+
+    .footer-left
+        padding: 0
+
+    .footer-right
+        padding: 0px
+        margin-top: 10px
+
+@media (max-width: 590px)
+    .footer
+        padding-bottom: 80px !important

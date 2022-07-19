@@ -14,48 +14,514 @@
 
 <body class="body">
 
-    <div class="fixed" id="fixed">
-        <div class="fixed__inner">
-            <a href="./"><img src="assets/img/logo3.svg"></a>
-            <div class="fixed__logo-text">
-                <h3>Компания "МДИ"</h3>
-                <p>Производство и оптовая продажа игрушек Монтессори с 2007 года.</p>
+    <div id="modalPopup" class="popup">
+        <div id="modalBg" class="bg"></div>
+        <div class="popup__body">
+          <div class="popup__content">
+            <a id="modalCross" class="popup__close"><img src="assets/img/close.svg" alt="закрыть"></a>
+    
+            <div class="popup__wrapper">
+              <div class="popup__text">
+                <h2>Бесплатная <br> консультация</h2>
+                <p id="popup-subtitle">Заполните, пожалуйста, форму. Мы будем рады <br>
+                познакомиться с вами и начать переговоры.</p>
+    
+                <form id="mail-form">
+                  <p>Пожалуйста, представьтесь:</p>
+                  <input id="form_name" name="name" type="text" placeholder="Ваше имя">
+    
+                  <p id="popup-contact">Как с вами связаться?</p>
+                  <input id="form_email" name="email" placeholder="Электронная почта" type="email">
+                  <div class="popup__text-form">
+                    <input id="form_phcode" name="phcode" placeholder="Код" value="Код" type="number">
+                    <input id="form_phone" name="phone" placeholder="Телефон" type="tel">
+                  </div>
+                  <p>Ваш проект:</p>
+                  <textarea id="placeholder" name="message" placeholder="Опишите ваш проект или задачу в свободной форме, чтобы мы могли до начала консультации подготовиться и предоставить ряд решений." type="email"></textarea>
+                <input id="form_datetime" name="datetime" type="hidden">
+                <input id="form_utm_campaign" name="utm_campaign" type="hidden" value="<?php echo $_GET['utm_campaign']; ?>">
+                <input id="form_gbid" name="gbid" type="hidden" value="<?php echo $_GET['gbid']; ?>">
+
+		  <div class="popup__error disactive">
+			<p id="popup-error">Текст ошибки</p>
+                  </div>
+    
+                  <button id="formSubmit" type="button">Отправить</button>
+                  
+                  <div class="popup__checkbox">
+                    <input required checked="checked" type="checkbox" id="checkbox-id-p">
+                    <label for="checkbox-id-p">Я согласен на обработку персональных данных</label>
+                  </div>
+    
+    
+                </form>
+
+              </div>
+
+              <div class="popup__text-submit">
+                <h2>Форма успешно <br>
+                    обработана</h2>
+                <p>Это означает, что мы свяжемся с вами очень скоро.</p>
+
+                <p>А пока подписывайтесь на <a href="">нашу страницу ВКонтакте</a>
+                    — и мы будем держать вас в курсе новостей
+                    из Китая и экспорта.</p>
+
+                <a href="https://vk.com/hofu_business"><button type="button">ВКОНТАКТЕ</button></a>
+              </div>
+
+	      <div class="popup__text-error">
+                <h2>При отправке почты произошла ошибка</h2>
+                <p id="smtp-error">Текст ошибки</p>
+              </div>
+
             </div>
+          </div>
+        </div>
+      </div>
 
-            <p class="fixed__inner-email">info@mdi-toys.ru</p>
+    <div class="body__wrapper">
 
-            <button id="modal__preview-1">ПОЛУЧИТЬ ОПТОВЫЙ ПРАЙС</button>
+        <div class="fixed" id="fixed">
+            <div class="fixed__inner">
+                <a href="./"><img src="assets/img/logo.png"></a>
+                <div class="fixed__logo-text">
+                    <h3>Компания "МДИ"</h3>
+                    <p>Производство и оптовая продажа <br> игрушек Монтессори с 2007 года.</p>
+                </div>
+
+                <p class="fixed__inner-email">info@mdi-toys.ru</p>
+
+                <button id="modal__preview-1">ПОЛУЧИТЬ <br> ПРАЙС-ЛИСТ</button>
+
+                <div class="fixed__contact">
+                    <ul>
+                        <li>Звоните, мы сейчас работаем</li>
+                    </ul>
+
+                    <h2><a style="color: #FFFFFF" href="tel:+74993507436">+7 499 350 7436</a></h2>
+                    <h2><a style="color: #FFFFFF" href="tel:88007770436">8 800 777 0436</a></h2>
+                </div>
+
+            </div>
 
         </div>
 
-    </div>
-    <nav class="nav">
-        <div class="nav__wrapper">
-            <div class="nav__logo">
-                <a href="./"><img src="assets/img/logo3.svg"></a>
-                <div class="nav__logo-text">
-                    <h3>Компания "МДИ"</h3>
-                    <p>Производство и оптовая продажа игрушек Монтессори с 2007 года.</p>
+        <nav class="nav">
+            <div class="nav__wrapper">
+                <div class="nav__logo">
+                    <a href="./"><img src="assets/img/logo.png"></a>
+                    <div class="nav__logo-text">
+                        <h3>Компания "МДИ"</h3>
+                        <p>Производство и оптовая продажа игрушек Монтессори с 2007 года.</p>
+                    </div>
+                </div>
+
+                <div class="nav__list">
+                    <p><a href="#brandLink">Продукция</a></p>
+                    <p><a href="#aboutLink">Почему мы?</a></p>
+                    <p><a href="#brandLink">Оптовые условия</a></p>
+                    <p><a href="#howLink">Контакты</a></p>
+                </div>
+
+                <div class="nav__contact">
+                    <ul>
+                        <li>Звоните, мы сейчас работаем</li>
+                    </ul>
+
+                    <h2><a style="color: #FFFFFF" href="tel:+74993507436">+7 499 350 7436</a></h2>
+                    <h2><a style="color: #FFFFFF" href="tel:88007770436">8 800 777 0436</a></h2>
+                    <h2>info@mdi-toys.ru</h2>
                 </div>
             </div>
+        </nav>
 
-            <div class="nav__list">
-                <p><a href="#partnersLink">Продукция</a></p>
-                <p><a href="#aboutLink">Почему мы?</a></p>
-                <p><a href="#partnersLink">Основные условия</a></p>
-                <p><a href="#howLink">Контакты</a></p>
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__inner">
+                    <div class="header__inner-item">
+                        <h2>Зарабатывайте <br>
+                            на продаже развивающих <br>
+                            деревянных игрушек</h2>
+                        <h3>от производителя № 1 в России и Европе. <br>
+                            Лидера по объёму продаж.</h3>
+                        <button id="modal__preview-2">ПОЛУЧИТЬ ОПТОВЫЙ ПРАЙС-ЛИСТ</button>
+                        <h3>Скидка от <strong>20%</strong> до <strong>70%</strong> на товары в первой <br>
+                            оптовой партии - САМЫЕ <strong>выгодные цены!</strong></h3>
+                    </div>
+
+                    <div class="header__text">
+
+                        <div class="header__text-wrapper">
+                            <div class="header__text-item">
+                                <img src="assets/img/headerCheck.png">
+
+                                <div class="header__text-inner">
+                                    <p>Более 100 000 000 ₽</p>
+                                    <p>заработали наши партнеры <br>
+                                        на наших игрушках за прошлый год</p>
+                                </div>
+                            </div>
+
+                            <div class="header__text-item">
+                                <img src="assets/img/headerCheck.png">
+
+                                <div class="header__text-inner">
+                                    <p>127 игрушек и 3 бренда</p>
+                                    <p>в ассортименте только <br>
+                                        востребованная продукция!</p>
+                                </div>
+                            </div>
+
+
+                            <div class="header__text-item">
+                                <img src="assets/img/headerCheck.png">
+
+                                <div class="header__text-inner">
+                                    <p>Более 100 000 отзывов</p>
+                                    <p>нашей продукции в социальных <br>
+                                        сетях и маркетплейсах</p>
+                                </div>
+                            </div>
+
+                            <div class="header__text-item">
+                                <img src="assets/img/headerCheck.png">
+
+                                <div class="header__text-inner">
+                                    <p>Окупаемость партии 28 дней</p>
+                                    <p>минимальный заказ 30 000 ₽, <br>
+                                        средняя окупаемость 28 дней</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <section id="catalog">
+            <div class="catalog">
+                <div class="catalog__wrapper">
+                    <div class="catalog__inner">
+                        <h2 class="catalog__title">Более 120 самых качественных и безопасных<br>
+                            игрушек из дерева для полноценного развития ребёнка</h2>
+                        <p class="catalog__subtitle">«МДИ» ориентируется на спрос и избегает «надутого» ассортимента,
+                            чтобы <br>
+                            оставить в ассортименте только востребованную продукцию</p>
+
+                        <div class="catalog__grid">
+                            <div class="catalog__grid-item">
+                                <img src="assets/img/catalog1.png" alt="Фото товара">
+                                <p class="catalog__grid-orange">Ваша оптовая <br>
+                                    цена покупки: 1100 ₽</p>
+                                <p class="catalog__grid-subtitle">Ваша цена продажи на <br>
+                                    маркетплейсах: <span>1885 ₽</span></p>
+                            </div>
+
+                            <div class="catalog__grid-item">
+                                <img src="assets/img/catalog2.png" alt="Фото товара">
+                                <p class="catalog__grid-orange">Ваша оптовая <br>
+                                    цена покупки: 650 ₽</p>
+                                <p class="catalog__grid-subtitle">Ваша цена продажи на <br>
+                                    маркетплейсах: <span>2155 ₽</span></p>
+                            </div>
+
+                            <div class="catalog__grid-item">
+                                <img src="assets/img/catalog3.png" alt="Фото товара">
+                                <p class="catalog__grid-orange">Ваша оптовая <br>
+                                    цена покупки: 650 ₽</p>
+                                <p class="catalog__grid-subtitle">Ваша цена продажи на <br>
+                                    маркетплейсах: <span>2155 ₽</span></p>
+                            </div>
+
+                            <div class="catalog__grid-item">
+                                <img src="assets/img/catalog4.png" alt="Фото товара">
+                                <p class="catalog__grid-orange">Ваша оптовая <br>
+                                    цена покупки: 1100 ₽</p>
+                                <p class="catalog__grid-subtitle">Ваша цена продажи на <br>
+                                    маркетплейсах: <span>5386 ₽</span></p>
+                            </div>
+
+                            <div class="catalog__grid-item">
+                                <img src="assets/img/catalog5.png" alt="Фото товара">
+                                <p class="catalog__grid-orange">Ваша оптовая <br>
+                                    цена покупки: 550 ₽</p>
+                                <p class="catalog__grid-subtitle">Ваша цена продажи на <br>
+                                    маркетплейсах: <span>2571 ₽</span></p>
+                            </div>
+
+                            <div class="catalog__grid-item">
+                                <img src="assets/img/catalog6.png" alt="Фото товара">
+                                <p class="catalog__grid-orange">Ваша оптовая <br>
+                                    цена покупки: 900 ₽</p>
+                                <p class="catalog__grid-subtitle">Ваша цена продажи на <br>
+                                    маркетплейсах: <span>2570 ₽</span></p>
+                            </div>
+
+                            <div class="catalog__grid-item">
+                                <img src="assets/img/catalog7.png" alt="Фото товара">
+                                <p class="catalog__grid-orange">Ваша оптовая <br>
+                                    цена покупки: 650 ₽</p>
+                                <p class="catalog__grid-subtitle">Ваша цена продажи на <br>
+                                    маркетплейсах: <span>1710 ₽</span></p>
+                            </div>
+
+                            <div class="catalog__grid-item">
+                                <img src="assets/img/catalog8.png" alt="Фото товара">
+                                <p class="catalog__grid-orange">Ваша оптовая <br>
+                                    цена покупки: 750 ₽</p>
+                                <p class="catalog__grid-subtitle">Ваша цена продажи на <br>
+                                    маркетплейсах: <span>1800 ₽</span></p>
+                            </div>
+                        </div>
+
+                        <h2 class="catalog__title">Хотите увидеть всю продукцию?</h2>
+
+                        <button id="modal__preview-3">Оставьте заявку, чтобы получить <br>
+                            полный каталог игрушек</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why">
+            <div class="why">
+                <div class="why__wrapper">
+                    <div class="why__inner">
+                        <h2 class="why__title">Почему «МДИ», а не другой <br>
+                            поставщик детских игрушек?</h2>
+                        <div class="why__text">
+
+                            <div class="why__text-wrapper">
+                                <div class="why__text-item">
+                                    <img src="assets/img/headerCheck.png">
+
+                                    <div class="why__text-inner">
+                                        <p>Минимальный заказ 30 000 ₽</p>
+                                        <p>окупаемость рассчитана на основе <br>
+                                            работы наших партнеров</p>
+                                    </div>
+                                </div>
+
+                                <div class="why__text-item">
+                                    <img src="assets/img/headerCheck.png">
+
+                                    <div class="header__text-inner">
+                                        <p>Расчётная окупаемость 28 дней</p>
+                                        <p>в среднем наши партнеры реализуют <br>
+                                            нашу продукцию за 28 дней</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="why__text-item">
+                                    <img src="assets/img/headerCheck.png">
+
+                                    <div class="why__text-inner">
+                                        <p>Заказывайте поштучно</p>
+                                        <p>нет ограничений количества штук <br>
+                                            на артикул! Только общая сумма заказа</p>
+                                    </div>
+                                </div>
+
+                                <div class="why__text-item">
+                                    <img src="assets/img/headerCheck.png">
+
+                                    <div class="header__text-inner">
+                                        <p>Игрушки сертифицированы</p>
+                                        <p>предоставляем сертификаты качества <br>
+                                            для продажи нашей продукцию</p>
+                                    </div>
+                                </div>
+
+                                <div class="why__text-item">
+                                    <img src="assets/img/headerCheck.png">
+
+                                    <div class="header__text-inner">
+                                        <p>Отгрузка в течение суток и раньше</p>
+                                        <p>после подтверждения оплаты <br>
+                                            вашего заказа</p>
+                                    </div>
+                                </div>
+
+                                <div class="why__text-item">
+                                    <img src="assets/img/headerCheck.png">
+
+                                    <div class="header__text-inner">
+                                        <p>Честные цены производителя</p>
+                                        <p>устанавливаем оптовые цены на игрушки <br>
+                                            без наценки со стороны посредников</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brand">
+            <div class="brand">
+                <div id="brandLink"></div>
+                <div class="brand__wrapper">
+                    <div class="brand__inner element-animation">
+                        <h2>Три бренда в ассортименте и более 120 <br>
+                            игрушек которые САМИ себя продают!</h2>
+
+                        <h3>В наших игрушках упор делается на качество во всем — это и хорошая <br>
+                            древесина, и фанера, и качественные/безвредные лаки и краски, и даже <br>
+                            упаковка - плотная и яркая, приятно держать в руках</h3>
+
+                        <div class="brand__inner-image">
+                            <img src="assets/img/brand_header-1.png" alt="Фото товара">
+                            <img src="assets/img/brand_header-2.png" alt="Фото товара">
+                            <img src="assets/img/brand_header-3.png" alt="Фото товара">
+                        </div>
+                    </div>
+
+                    <div class="brand__list">
+                        <div class="brand__list-item element-animation">
+                            <img src="assets/img/brand1.png" class="brand__list-img">
+                            <div class="brand__list-item-text">
+                                <h2>Разрешаем продавать нашу <br>
+                                    продукцию на маркетплейсах</h2>
+                                <p>Предоставляем полный пакет документов
+                                    для продажи нашей продукции на маркетплейсах, <br>
+                                    в том числе: <br>
+                                    - лицензионный договор; <br>
+                                    - договор на дистрибуцию; <br>
+                                    - письмо — разрешение на продажу товара от правообладателя; <br>
+                                    - сертификаты. <br>
+                                </p>
+
+                                <p>Маркетплейсы без этих документов не примут продукцию.</p>
+                            </div>
+                        </div>
+
+                        <div class="brand__list-item">
+                            
+                            <div class="brand__list-item-text">
+                                <h2>Разработаны с учетом рекомендаций <br>
+                                    ведущих детских психологов, в т.ч. <br>
+                                    по методике Монтессори</h2>
+
+                                <p>Важно понимать, что не все игрушки одинаково полезны.
+                                    То есть, каждый производитель, конечно же, пишет на
+                                    коробке, что его игрушка — развивающая. Однако это,
+                                    скорее, маркетинговый ход для родителей, которые
+                                    стремятся купить «не просто игрушку»..
+
+                                </p>
+
+                                <p>Наши бренды отличает крайне серьёзный, скрупулёзный
+                                    подход к проработке каждой модели: над игрушками
+                                    работают не только дизайнеры, но и детские психологи
+                                    и инженеры.
+
+                                </p>
+                            </div>
+
+                            <img src="assets/img/brand2.png" class="brand__list-img">
+                        </div>
+
+                        <div class="brand__list-item">
+                            <img src="assets/img/brand3.png" class="brand__list-img">
+
+                            <div class="brand__list-item-text">
+                                <h2>Продвижение от ведущих блогеров <br>
+                                    и детских психологов страны</h2>
+                                <p>Нас рекомендуют лидеры мнений, независимые
+                                    отзовики, каталоги, федеральные сети и сотни тысяч
+                                    наших покупателей.
+                                </p>
+
+                                <p>Часто наши розничные покупатели замечают наши
+                                    игрушки в обзорах, это увеличивает шансы на успех
+                                    ваших продаж. Покупатель видит знакомый дизайн
+                                    коробки или игрушки с фирменным логотипом бренда и
+                                    быстрее принимает решение о покупке.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="brand__list-item">
+
+                            <div class="brand__list-item-text">
+                                <h2>Офис/склад в центре Москвы, <br>
+                                    рядом с метро Авиамоторная</h2>
+
+                                <p>Если хотите увидеть игрушки своими глазами,
+                                    договоритесь с нами о встрече и приезжайте в офис
+                                    и шоурум, где выложены большинство наших игрушек.
+                                    Можно фотографировать, снимать видео и доставать
+                                    игрушки из коробок.                               
+                                </p>
+
+                                <p>Если вы находитесь не в Москве, мы можем прислать
+                                    вам пробные образцы нашей продукции совершенно
+                                    бесплатно.
+                                </p>
+                            </div>
+
+                            <img src="assets/img/brand4.png" class="brand__list-img-right">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <section id="how">
+            <div class="how">
+                <div id="howLink"></div>
+                <div class="how__wrapper">
+                    <div class="how__inner">
+                        <div class="how__inner-text">
+                            <h2>Как с нами связаться</h2>
+                            <p>
+                                В наше время многие (если не большинство!) оптовых и производственный компаний <br>
+                                на деле оказываются небольшими мутными конторами, которые предлагают <br>
+                                заключать договоры с какими-то левыми ИП на УСН которым от роду год. <br>
+                                Мы так не делаем. ООО «МДИ» (Мир деревянных игрушек) хоть и занимается оптовым <br>
+                                и производственным бизнесом, но это полностью прозрачная компания, <br>
+                                зарегистрированная в 2007 году и работающая в России уже 15 лет. <br>
+                                Можете проверить сами: ООО «МДИ», номер ИНН: <b>3808161540</b>, ОГРН: <b>1073808001453</b>
+                            </p>
+
+                            <p>Правильные, обстоятельные, профессионально составленные договоры, <br>
+                                официальная работа по безналичному расчету, мы даже берём на себя и платим НДС.</p>
+
+                            <div class="how__contact">
+                                <p><b>Официальные контакты для связи с МДИ:</b></p>
+                                <p>info@mdi-toys.ru</p>
+                                <p><a style="color: #1F1F1F" href="tel:+88007770436">+8 800 777 0436</a></p>
+                                <p><a style="color: #1F1F1F" href="tel:+74951095465">+7 495 109 54 65</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer-left">
+                <a href="">Vkontakte</a>
+                <a href="#telegram">Telegram</a>
             </div>
 
-            <div class="nav__contact">
-                <ul>
-                    <li>Звоните, мы сейчас работаем</li>
-                </ul>
-
-                <h2><a style="color: #FFFFFF" href="tel:+8613235799307">+86 132 3579 9307</a></h2>
-                <h2><a style="color: #FFFFFF" href="tel:+74951095465">+7 495 109 54 65</a></h2>
-                <h2>info@hofu.ru</h2>
+            <div class="footer-right">
+                <p>© 2008 - 2022 КОМПАНИЯ «МДИ»</p>
             </div>
         </div>
-    </nav>
+    </footer>
+
+
+    <script src="assets/js/script.js"></script>
 
 </body>
