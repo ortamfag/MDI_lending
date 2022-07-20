@@ -1,0 +1,119 @@
+.text
+    background-color: $white
+    position: relative
+
+    &__partners
+
+        & img
+            height: 50px
+            margin-right: 15px
+
+    &__inner
+        padding: 100px 100px 0px 100px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-top: 120px
+
+        &-text 
+            margin-right: 40px
+            
+            & h2
+                color: #1f1f1f
+                @include bold
+                font-size: 34px
+                margin-bottom: 30px
+                text-align: center
+
+            & p
+                @include medium
+                color: $white
+                font-size: 16px
+                margin-bottom: 20px
+                color: #1f1f1f
+                
+
+            & span
+                color: #1f1f1f
+
+            &-bottom
+                display: flex
+                align-items: center
+
+                
+                & p
+                    margin-right: 20px
+
+                & img
+                    margin-bottom: 20px
+
+    &__contact p
+        margin-bottom: 5px !important
+
+        & span
+            color: $white
+
+#textLink
+    position: absolute
+    top: -150px
+
+@media (max-width: 1450px)
+    .text__inner
+        padding: 100px 0px 0px 0px
+
+@media (max-width: 1280px)
+    .text__inner
+        flex-direction: column
+
+        padding-top: 0px
+        padding: 100px 0px 0px 0px
+
+    
+
+    .text__inner-text
+        margin-right: 0px
+
+    .text__inner-text h2
+        text-align: center
+
+    .text__inner-text p
+        text-align: left
+
+
+@media (max-width: 790px)
+    .text__inner-text-bottom
+        flex-direction: column
+        align-items: flex-start
+
+@media (max-width: 790px)
+    .text
+        padding: 0px 0px 100px 0px
+
+    .text__inner
+        padding: 50px 0px
+
+    .text__inner-text-bottom p
+        width: auto 
+
+
+@media (max-width: 535px)
+    .text__inner-text br
+        display: none
+    .text__inner-text h2
+        font-size: 24px
+
+    .text__partners
+        display: grid
+        grid-template-columns: 50% 50%  
+        justify-content: center
+        justify-items: center
+        align-items: center
+
+        & img
+            height: auto
+
+    .text__inner-text-bottom p
+        width: 100%
+
+    .text__inner
+        padding: 50px 0px 0px 0px
