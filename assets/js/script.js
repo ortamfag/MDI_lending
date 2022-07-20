@@ -23,6 +23,38 @@ $(function() {
   });
 });
 
+const slider = document.querySelector('.swiper-container');
+
+let mySwiper = new Swiper(slider, {
+	slidesPerView: 2,
+	spaceBetween: 50,
+  speed: 500,
+  autoplay: {
+    enabled: true,
+    delay: 3000,
+  },
+	centeredSlides: true,
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+  breakpoints: {
+    830: {
+      slidesPerView: 2
+    },
+
+    320: {
+      slidesPerView: 1
+    }
+  }
+})
+
 
 const fixed = document.querySelector('#fixed')
 

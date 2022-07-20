@@ -1,0 +1,18 @@
+<svg id="Group_13_copy" data-name="Group 13 copy" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff6b00;
+        stroke: #fff;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_2_copy" data-name="Ellipse 2 copy" class="cls-1" cx="22.5" cy="22.5" r="20"/>
+  <path id="Polygon_1_copy" data-name="Polygon 1 copy" class="cls-2" d="M311.5,7035.15l13.2,7.63v-15.25Z" transform="translate(-297.5 -7012.5)"/>
+</svg>

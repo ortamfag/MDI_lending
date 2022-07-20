@@ -11,6 +11,7 @@
     <link type="image/x-icon" href="assets/img/favlog.svg" rel="shortcut icon">
      <!-- Slider CSS -->
     <link rel="stylesheet" href="assets/css/chief-slider.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
 </head>
@@ -555,10 +556,10 @@
                 </div>
                 <!-- Кнопки для перехода к предыдущему и следующему слайду -->
                 <div
-                  style="background-image: url('src/img/slider2/leftarrow.svg'); background-position: center center; left: 0px; width: 180px;"
+                  style="background-image: url('assets/img/leftarrow.svg'); background-position: center center; left: 0px; width: 180px;"
                   href="#" id="arrow-2-1" class="slider__control slider__control-first" data-slide="prev"></div>
                 <div
-                  style="background-image: url('src/img/slider2/rightarrow.svg'); background-position: center center; right: 0px; width: 180px"
+                  style="background-image: url('assets/img/rightarrow.svg'); background-position: center center; right: 0px; width: 180px"
                   id="arrow-2-2" href="#" class="slider__control slider__control-first" data-slide="next"></div>
         
               </div>
@@ -637,6 +638,30 @@
             </div>
         </section>
 
+        <section class="third__slider">
+            <div class="slider-container">
+              <div class="slider-top">
+                <div class="slider-buttons">
+                  <button style="border: 0; background-position: center center; background-size:cover;" class="swiper-button-prev"></button>
+                  <button style="border: 0; background-position: center center; background-size:cover;" class="swiper-button-next"></button>
+                </div>
+              </div>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
+                      src="assets/img/slide-1.png"></div>
+                  <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
+                      src="assets/img/slide-2.png"></div>
+                  <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
+                      src="assets/img/slide-3.png"></div>
+                  <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
+                      src="assets/img/slide-4.png"></div>
+                </div>
+      
+              </div>
+            </div>
+          </section>
+
         
 
         <section id="how">
@@ -687,6 +712,7 @@
 
       <!-- Slider JavaScript -->
     <script src="assets/js/chief-slider.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
 
         <!-- Morquee JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

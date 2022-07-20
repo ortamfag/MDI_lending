@@ -1,0 +1,73 @@
+.card
+    padding: 30px
+    min-height: 300px
+    color: #111
+    font-size: 16px
+
+.slider-container
+    background-color: #FFFFFF
+
+.slider-container
+    max-width: 100%
+    padding: 0
+    position: relative
+    margin: 0 auto
+
+.swiper-button-prev,
+.swiper-button-next
+    background-color: #fff
+    width: 40px
+    height: 40px
+    border-radius: 100%
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 20px 20px
+
+.swiper-button-prev::after,
+.swiper-button-next::after
+    display: none
+
+.slider-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+
+.slider-buttons
+    display: flex
+    align-items: center
+
+/* swiper-bullets styling */
+
+.swiper-button-prev,
+.swiper-button-next
+    position: absolute
+    margin-left: 10px
+
+.swiper-button-prev
+    background: url("../img/leftarrow.svg")
+    left: 100px
+
+.swiper-button-next
+    background: url("../img/rightarrow.svg")
+    right: 100px
+
+.swiper-container
+    padding: 45px 0 0 0
+
+.swiper-slide
+    opacity: 0.5
+    transition: transform 0.5s
+
+.swiper-slide-active
+    transform: scale(1.2)
+    opacity: 1
+    transition: transform 0.5s
+
+@media (max-width: 1000px)
+    .swiper-button-prev, .swiper-button-next
+        display: none
+
+@media (max-width: 560px)
+    .card
+        min-height: 170px
