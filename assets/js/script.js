@@ -1,3 +1,29 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = new ChiefSlider('.slider', {
+    loop: true,
+    autoplay: true,
+    interval: 3000,
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = new ChiefSlider('.slider2', {
+    loop: true,
+    autoplay: true,
+    interval: 5000,
+  });
+});
+
+$(function() {
+  $('.marquee').marquee({
+    duration: 22000,
+    startVisible: true,
+    duplicated: true,
+    direction: 'right'
+  });
+});
+
+
 const fixed = document.querySelector('#fixed')
 
 function opacity() {
