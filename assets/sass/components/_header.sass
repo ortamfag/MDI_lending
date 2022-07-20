@@ -143,6 +143,9 @@
 
     .header__inner-item h3:nth-child(2)
         margin-bottom: 50px
+
+    .header__inner-item h3:nth-child(4)
+        margin-top: 40px
 @media (max-width: 1435px)
     .header__inner-item button
         min-height: 8vh
@@ -160,9 +163,28 @@
     .header__text-wrapper
         padding-top: 50px
         padding-bottom: 50px
+
 @media (max-width: 1280px)
+    .header__inner-item h2
+        font-size: 40px
+
+@media screen and (max-width:1280px) and (max-height:720px)
+    .header__inner-item h2
+        font-size: 35px
+
+    .header__wrapper
+        padding: 0
+
+    .header__text-item
+        margin-bottom: 20px
+
+@media (max-width: 1270px)
+    .header__inner-item h2
+        font-size: 44px
+
     .header__inner-item button
         width: 100%
+
     .header__inner
         flex-direction: column
 
