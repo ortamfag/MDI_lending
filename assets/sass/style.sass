@@ -26,9 +26,15 @@ body
 .nav, .header, .catalog, .why, .brand, .footer, .how
     padding: 0px 300px
 
-
 .noscroll
     overflow-y: hidden
+
+.element-animation
+    opacity: 0
+
+.element-animation.element-show
+    opacity: 1
+    transition: opacity 0.7s
 
 @media (max-width: 1900px)
     .nav, .header, .catalog, .why, .brand, .footer, .how
@@ -41,3 +47,7 @@ body
 @media (max-width: 750px)
     .nav, .header, .catalog, .why, .brand, .how, .footer
         padding: 0px 4%
+
+@media (max-width: 530px)
+    .element-animation
+        opacity: 1
