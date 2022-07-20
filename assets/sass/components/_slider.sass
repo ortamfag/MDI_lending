@@ -1,0 +1,166 @@
+.slider__item img 
+    width: 100%
+
+.slider
+    width: 100%
+    padding: 0
+
+.second__slider
+
+    &-item
+        padding: 10px
+        text-indent: 0px !important
+        width: 100% !important
+        height: 100% !important
+        font-size: 16px !important
+        @include medium
+        text-align: center
+        
+
+        &:active
+            background-color: $white !important
+    &-inner
+        margin: 0 !important
+        position: static
+        background-color: #f7f7f7
+
+    &-1
+        display: grid
+        grid-template-columns: 40% 60%
+        
+        &-left
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            background-color: #ff6b00
+            padding-left: 10%
+
+            & h2
+                @include bold
+                color: $white
+                line-height: 100%
+
+                &:nth-child(1)
+                    font-size: 80px
+
+                &:nth-child(2)
+                    font-size: 45px
+
+        &-right
+
+            & img
+                height: 100% !important
+                    
+                    
+
+
+.marquee
+    background-color: #f7f7f7
+    & li
+        list-style-type: none    
+        display: inline
+        font:
+            size: 16px
+        @include medium
+
+        margin-right: 150px
+        color: #4E4E4E
+        
+    & ul
+        padding: 25px
+
+.mobile__slider-pic
+        display: none
+
+
+@media (max-width: 1470px)
+
+    #first, #second, #third, #fourth
+        width: 10px !important
+        height: 10px !important
+        margin-right: 10px !important
+
+    .slider__control-first
+        width: 180px !important
+
+    #text
+        font-size: 20px !important
+
+    .second__slider-1
+        grid-template-columns: 45% 55%
+
+        &-left
+            padding-right: 30px
+
+@media (max-width: 1425px)
+    #text
+            font-size: 18px !important
+
+@media (max-width: 1205px)
+    .second__slider-1-left
+
+        & h2:nth-child(1)
+            font-size: 70px
+
+        & h2:nth-child(2)
+            font-size: 40px
+
+@media (max-width: 1090px)
+
+    #text
+        font-size: 16px !important
+
+    .slider__indicators
+        padding: 20px !important 
+
+    #indicators-1
+        width: 70% !important
+
+    .second__slider-1-left
+
+        & h2:nth-child(1)
+            font-size: 52px
+
+        & h2:nth-child(2)
+            font-size: 30px
+
+    .slider__control-first
+        width: 150px !important
+@media (max-width: 870px)
+    .desktop
+        display: none
+    .mobile__slider-pic
+        display: block
+        background-color: #ff6b00
+
+    .second__slider-1-left
+        padding: 5%
+
+        & img
+            width: 100%
+
+    .second__slider-1-left
+
+        & h2:nth-child(1)
+            font-size: 50px
+            margin-top: 20px
+            margin-bottom: 10px
+
+        & h2:nth-child(2)
+            font-size: 30px
+            margin-bottom: 20px
+
+@media (max-width: 576px)
+    .second__slider-1-left
+
+        & h2:nth-child(1)
+            font-size: 30px
+            
+
+        & h2:nth-child(2)
+            font-size: 20px
+            
+
+
+    
