@@ -148,6 +148,10 @@
       padding: 12px
       width: 30%
 
+@media (max-width: 1025px)
+  .fixed__logo-text p br
+    display: none
+
 @media (max-width: 800px)
   .fixed__inner-email
     display: none
@@ -178,8 +182,8 @@
     transition: 0.4s all !important  
 
     & img
-      width: 70px
-      height: 70px
+      width: 90px
+      height: 60px
 
 
 @media (max-width: 460px)
@@ -190,7 +194,10 @@
     justify-content: center
 
     &__inner
-      margin-left: 10vw
+      margin-left: 5vw
 
     & button
-      margin-right: 10vw
+      margin-right: 5vw
+
+      & br
+        display: none

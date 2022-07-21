@@ -27,8 +27,7 @@
             <div class="popup__wrapper">
               <div class="popup__text">
                 <h2>Бесплатная <br> консультация</h2>
-                <p id="popup-subtitle">Заполните, пожалуйста, форму. Мы будем рады <br>
-                познакомиться с вами и начать переговоры.</p>
+                <p id="popup-subtitle">Заполните, пожалуйста, форму. Мы будем рады познакомиться с вами и начать переговоры, прислав прайс-лист</p>
     
                 <form id="mail-form">
                   <p>Пожалуйста, представьтесь:</p>
@@ -37,14 +36,11 @@
                   <p id="popup-contact">Как с вами связаться?</p>
                   <input id="form_email" name="email" placeholder="Электронная почта" type="email">
                   <div class="popup__text-form">
-                    <input id="form_phcode" name="phcode" placeholder="Код" value="Код" type="number">
+                    <input id="form_phcode" name="phcode" placeholder="Код" value="7" type="number">
                     <input id="form_phone" name="phone" placeholder="Телефон" type="tel">
                   </div>
-                  <p>Ваш проект:</p>
+                  <p>Расскажите о вашей компании:</p>
                   <textarea id="placeholder" name="message" placeholder="Опишите ваш проект или задачу в свободной форме, чтобы мы могли до начала консультации подготовиться и предоставить ряд решений." type="email"></textarea>
-                <input id="form_datetime" name="datetime" type="hidden">
-                <input id="form_utm_campaign" name="utm_campaign" type="hidden" value="<?php echo $_GET['utm_campaign']; ?>">
-                <input id="form_gbid" name="gbid" type="hidden" value="<?php echo $_GET['gbid']; ?>">
 
 		  <div class="popup__error disactive">
 			<p id="popup-error">Текст ошибки</p>
@@ -314,7 +310,7 @@
                                 <div class="why__text-item element-animation">
                                     <img src="assets/img/headerCheck.svg">
 
-                                    <div class="header__text-inner">
+                                    <div class="why__text-inner">
                                         <p>Расчётная окупаемость 28 дней</p>
                                         <p>в среднем наши партнеры реализуют <br>
                                             нашу продукцию за 28 дней</p>
@@ -335,7 +331,7 @@
                                 <div class="why__text-item element-animation">
                                     <img src="assets/img/headerCheck.svg">
 
-                                    <div class="header__text-inner">
+                                    <div class="why__text-inner">
                                         <p>Игрушки сертифицированы</p>
                                         <p>предоставляем сертификаты качества <br>
                                             для продажи нашей продукцию</p>
@@ -345,7 +341,7 @@
                                 <div class="why__text-item element-animation">
                                     <img src="assets/img/headerCheck.svg">
 
-                                    <div class="header__text-inner">
+                                    <div class="why__text-inner">
                                         <p>Отгрузка в течение суток и раньше</p>
                                         <p>после подтверждения оплаты <br>
                                             вашего заказа</p>
@@ -355,7 +351,7 @@
                                 <div class="why__text-item element-animation">
                                     <img src="assets/img/headerCheck.svg">
 
-                                    <div class="header__text-inner">
+                                    <div class="why__text-inner">
                                         <p>Честные цены производителя</p>
                                         <p>устанавливаем оптовые цены на игрушки <br>
                                             без наценки со стороны посредников</p>
@@ -479,7 +475,64 @@
         </div>
         </section>
 
+        <section id="some">
+            <div class="some">
+                <div class="some__wrapper">
+                    <div class="some__inner">
+                        <h2 class="some__title element-animation">Некоторые наши оптовые клиенты</h2>
+                        <p class="some__subtitle element-animation">За более чем 15 лет работы, мы работаем с более чем 5000 клиентами по всей России:<br>
+                            от небольших предпринимателей до крупных федеральных сетей</p>
+
+                        <div class="some__grid">
+                            <div class="some__grid-item element-animation">
+                                <img src="assets/img/some1.png" alt="Фото товара">
+                            </div>
+
+                            <div class="some__grid-item element-animation">
+                                <img src="assets/img/some2.png" alt="Фото товара">
+                            </div>
+
+                            <div class="some__grid-item element-animation">
+                                <img src="assets/img/some3.png" alt="Фото товара">
+                            </div>
+
+                            <div class="some__grid-item element-animation">
+                                <img src="assets/img/some4.png" alt="Фото товара">
+                            </div>
+
+                            <div class="some__grid-item element-animation">
+                                <img src="assets/img/some5.png" alt="Фото товара">
+                            </div>
+
+                            <div class="some__grid-item element-animation">
+                                <img src="assets/img/some6.png" alt="Фото товара">
+                            </div>
+
+                            <div class="some__grid-item element-animation">
+                                <img src="assets/img/some7.png" alt="Фото товара">
+                            </div>
+
+                            <div class="some__grid-item element-animation">
+                                <img src="assets/img/some8.png" alt="Фото товара">
+                            </div>
+                            
+                            <div class="some__grid-item element-animation">
+                                <img src="assets/img/some9.png" alt="Фото товара">
+                            </div>
+
+                            <div class="some__grid-item element-animation">
+                                <img src="assets/img/some10.png" alt="Фото товара">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="second__slider">
+
+            <h2 class="slider__title">Оказываем услугу по производству игрушек на заказ (СТМ) <br>
+                по вашим чертежам при тираже от 3000 ед.</h2>
 
             <div class='marquee' style='overflow:hidden'>
               <ul>

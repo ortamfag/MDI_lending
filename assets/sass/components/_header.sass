@@ -1,8 +1,6 @@
 .body__wrapper
 
-    background-image: url('../img/background.png')
-    background-repeat: no-repeat
-    background-size: cover
+    background-color: #006cf3
     background-position: 50% 100%
 
 .header
@@ -17,7 +15,7 @@
 
             & h2
                 @include bold
-                font-size: 44px
+                font-size: 38px
                 text-align: left
                 color: $white
                 min-height: 10vh
@@ -111,7 +109,7 @@
         &-inner
             display: flex
             flex-direction: column
-            width: 300px
+            width: 310px
 
             & p:nth-child(1)
                 @include bold
@@ -130,7 +128,7 @@
 @media (max-width: 1530px)
 
     .header__inner-item h2
-        font-size: 44px
+        font-size: 38px
         width: 100%
 
     .header__wrapper
@@ -266,6 +264,7 @@
     .header__inner-item button
         padding: 15px
         width: 100%
+        font-size: 25px
 
     .header__text-wrapper
         padding-top: 20px
@@ -274,6 +273,15 @@
         padding: 0px 0px 50px 0px
 
     .header__inner-item h2
+        font-size: 25px
+        text-align: center
+
+    .header__inner-item h3:nth-child(2)
+        text-align: center
+        font-size: 20px
+
+    .header__inner-item h3:nth-child(4)
+        text-align: center
         font-size: 18px
 
     .header__inner-item h3 br

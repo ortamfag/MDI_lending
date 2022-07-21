@@ -175,12 +175,12 @@
     height: 100%
     z-index: 0
 
-// .popup__text-form::before
-//     content: '+'
-//     position: absolute
-//     margin-left: 15px
-//     color: #1f1f1f
-//     @include medium
+.popup__text-form::before
+    content: '+'
+    position: absolute
+    margin-left: 15px
+    color: #1f1f1f
+    @include medium
 
 input[type="email"], input[type="number"], input[type="tel"], input[type='text']
     padding: 16px
@@ -202,7 +202,7 @@ textarea
     @include medium
     font-size: 16px
     color: #1f1f1f
-    width: 100%
+    width: 100% !important
     min-height: 130px
     max-width: 900px
 
@@ -219,7 +219,7 @@ input[type="email"]
 input[type="number"]
     width: 40%
     margin-right: 5%
-    // text-indent: 20px
+    text-indent: 20px
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button 
