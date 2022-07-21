@@ -82,6 +82,8 @@ const modalEl = document.querySelector('#modalPopup'),
       closeBody = document.querySelector('.popup'),
       bg = document.querySelector('#modalBg')
 
+let body = document.querySelector('.body')
+
 btnEl1.addEventListener('click', () => {
   
   modalEl.classList.add('open');
@@ -111,6 +113,7 @@ closeEl.addEventListener('click', () => {
   body.classList.remove('noscroll')
   
 });
+
 bg.addEventListener('click', () => {
   modalEl.classList.remove('open')
   body.classList.remove('noscroll')
