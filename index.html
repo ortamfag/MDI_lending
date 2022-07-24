@@ -15,7 +15,22 @@
      <!-- Slider CSS -->
     <link rel="stylesheet" href="assets/css/chief-slider.min.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
-    
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89618475, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89618475" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->    
 </head>
 
 <body class="body">
@@ -44,6 +59,7 @@
                   <p>Расскажите о вашей компании:</p>
                   <textarea id="placeholder" name="message" placeholder="Опишите ваш проект или задачу в свободной форме, чтобы мы могли до начала консультации подготовиться и предоставить ряд решений." type="email"></textarea>
 
+		  <input id="form_datetime" name="datetime" type="hidden">
 		  <div class="popup__error disactive">
 			<p id="popup-error">Текст ошибки</p>
                   </div>
@@ -766,13 +782,24 @@
     </footer>
 
       <!-- Slider JavaScript -->
-    <script src="assets/js/chief-slider.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/chief-slider.min.js"></script>
 
         <!-- Morquee JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.activity.min.js"></script>
+    <script>
+        $('body').activity({
+                'achieveTime':60,
+                'testPeriod':10,
+                useMultiMode: 1,
+                callBack: function (e) {
+			ym(89618475,'reachGoal','60sec')
+                }
+        });
+    </script>
 
 </body>
