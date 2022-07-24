@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const slider = new ChiefSlider('.slider2', {
+  const slider2 = new ChiefSlider('.slider2', {
+    loop: true,
+    autoplay: true,
+    interval: 5000,
+  });
+
+  const slider = new ChiefSlider('.slider1', {
     loop: true,
     autoplay: true,
     interval: 5000,
