@@ -1,7 +1,8 @@
 .why
 
     background-color: $white
-    
+    position: relative
+
     &__wrapper
         padding: 100px 0px 100px 0px
 
@@ -58,6 +59,9 @@
             & p:nth-child(1)
                 @include bold
 
+#aboutLink
+    top: -100px
+    position: absolute
 @media (max-width: 1670px)
     .why__text-wrapper
         width: 100%

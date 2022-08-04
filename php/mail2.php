@@ -36,12 +36,12 @@ function log_write($msg){
     
     $mail->Host = 'ssl://smtp.yandex.ru';
     $mail->Port = 465;
-    $mail->Username = 'send@hofu.ru';
-    $mail->Password = 'gpsqpsaetdaqbgsu';
+    $mail->Username = 'mail-service@mdi-toys.ru';
+    $mail->Password = 'adv1234!';
     
-    $mail->setFrom('send@hofu.ru', 'hofu.ru');		
+    $mail->setFrom('mail-service@mdi-toys.ru', 'opt.mdi-toys.ru');		
     
-    $mail->addAddress('send@hofu.ru');
+    $mail->addAddress('opt@mdi-toys.ru');
 
     $mail->Subject = "Opt.mdi-toys.ru form message";
 
