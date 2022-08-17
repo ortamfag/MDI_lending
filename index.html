@@ -8,28 +8,36 @@
     <meta name="format-detection" content="telephone=no">
     <title>Компания "МДИ"</title>
     <link type="image/x-icon" href="assets/img/faviconV2.png" rel="shortcut icon">
-    <link rel="preload" href="assets/fonts/Montserrat-Medium.ttf" as="font"/>
+    <link rel="preload" href="assets/fonts/Montserrat-Medium.ttf" as="font" />
     <link rel="preload" href="assets/fonts/Montserrat-Bold.ttf" as="font">
     <link rel="stylesheet" href="assets/css/style.min.css">
-     <!-- Slider CSS -->
+    <!-- Slider CSS -->
     <link rel="stylesheet" href="assets/css/chief-slider.min.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
+                .insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(89618475, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/89618475" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->    
+        ym(89618475, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/89618475" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
 <body class="body">
@@ -37,64 +45,47 @@
     <div id="modalPopup" class="popup">
         <div id="modalBg" class="bg"></div>
         <div class="popup__body">
-          <div class="popup__content">
-            <a id="modalCross" class="popup__close"><img src="assets/img/close.svg" alt="закрыть"></a>
-    
-            <div class="popup__wrapper">
-              <div class="popup__text">
-                <h2>Бесплатная <br> консультация</h2>
-                <p id="popup-subtitle">Заполните, пожалуйста, форму. Мы будем рады познакомиться с вами и начать переговоры</p>
-    
-                <form id="mail-form">
-                  <p>Пожалуйста, представьтесь:</p>
-                  <input id="form_name" name="name" type="text" placeholder="Ваше имя">
-    
-                  <p id="popup-contact">Как с вами связаться?</p>
-                  <input id="form_email" name="email" placeholder="Электронная почта" type="email">
-                  <div class="popup__text-form">
-                    <input id="form_phcode" name="phcode" placeholder="Код" value="7" type="number">
-                    <input id="form_phone" name="phone" placeholder="Телефон" type="tel">
-                  </div>
-                  <p>Расскажите о вашей компании:</p>
-                  <textarea id="placeholder" name="message" placeholder="Опишите ваш проект или задачу в свободной форме, чтобы мы могли до начала консультации подготовиться и предоставить ряд решений." type="email"></textarea>
+            <div class="popup__content">
+                <a id="modalCross" class="popup__close"><img src="assets/img/close.svg" alt="закрыть"></a>
 
-		  <input id="form_datetime" name="datetime" type="hidden">
-		  <div class="popup__error disactive">
-			<p id="popup-error">Текст ошибки</p>
-                  </div>
-    
-                  <button id="formSubmit" type="button">Отправить</button>
-                  
-                  <div class="popup__checkbox">
-                    <input required checked="checked" type="checkbox" id="checkbox-id-p">
-                    <label for="checkbox-id-p">Я согласен на обработку персональных данных</label>
-                  </div>
-    
-    
-                </form>
+                <div class="popup__wrapper">
+                    <div class="popup__text">
+                        <h2>Бесплатная <br> консультация</h2>
+                        <p id="popup-subtitle">Заполните, пожалуйста, форму. Мы будем рады познакомиться с вами и начать
+                            переговоры</p>
 
-              </div>
+                        <form id="mail-form">
+                            <p>Пожалуйста, представьтесь:</p>
+                            <input id="form_name" name="name" type="text" placeholder="Ваше имя">
 
-              <div class="popup__text-submit">
-                <h2>Форма успешно <br>
-                    обработана</h2>
-                <p>Это означает, что мы свяжемся с вами очень скоро.</p>
+                            <p id="popup-contact">Как с вами связаться?</p>
+                            <input id="form_email" name="email" placeholder="Электронная почта" type="email">
+                            <div class="popup__text-form">
+                                <input id="form_phcode" name="phcode" placeholder="Код" value="7" type="number">
+                                <input id="form_phone" name="phone" placeholder="Телефон" type="tel">
+                            </div>
+                            <p>Расскажите о вашей компании:</p>
+                            <textarea id="placeholder" name="message"
+                                placeholder="Опишите ваш проект или задачу в свободной форме, чтобы мы могли до начала консультации подготовиться и предоставить ряд решений."
+                                type="email"></textarea>
 
-                <p>А пока перейдите на <a href="https://vk.com/topic-37189082_35058559">нашу страницу ВКонтакте</a>
-                    — и <br> ознакомьтесь с честными отзывами ваших <br> будущих клиентов.</p>
+                            <input id="form_datetime" name="datetime" type="hidden">
+                            <div class="popup__error disactive">
+                                <p id="popup-error">Текст ошибки</p>
+                            </div>
 
-                <a href="https://vk.com/topic-37189082_35058559" target="_blank"><button type="button">ВКОНТАКТЕ</button></a>
-              </div>
+                            <button id="formSubmit" type="button">Отправить</button>
 
-	      <div class="popup__text-error">
-                <h2>При отправке почты произошла ошибка</h2>
-                <p id="smtp-error">Текст ошибки</p>
-              </div>
-
+                            <div class="popup__checkbox">
+                                <input required checked="checked" type="checkbox" id="checkbox-id-p">
+                                <label for="checkbox-id-p">Я согласен на обработку персональных данных</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <div class="body__wrapper">
 
@@ -226,7 +217,8 @@
                     <div class="catalog__inner">
                         <h2 class="catalog__title element-animation">Более 120 самых качественных и безопасных<br>
                             игрушек из дерева для полноценного развития ребёнка</h2>
-                        <p class="catalog__subtitle element-animation">«МДИ» ориентируется на спрос и избегает «надутого» ассортимента,
+                        <p class="catalog__subtitle element-animation">«МДИ» ориентируется на спрос и избегает
+                            «надутого» ассортимента,
                             чтобы <br>
                             оставить в ассортименте только востребованную продукцию</p>
 
@@ -298,118 +290,118 @@
 
                         <div class="slider slider1 mobile">
                             <div class="slider__container">
-                              <div class="slider__wrapper">
-                                <div class="slider__items">
-                                  <div class="slider__item">
-                                    <!-- Контент 1 слайда -->
-                                    <div class="first__slider-1">
-                                        <div class="slider1-item">
-                                            <img src="assets/img/catalog1.png" alt="Фото товара">
-                                            <p class="slider1-orange">Ваша оптовая <br>
-                                                цена покупки: 1100 ₽</p>
-                                            <p class="slider1-subtitle">Ваша цена продажи на <br>
-                                                маркетплейсах: <span>1885 ₽</span></p>
+                                <div class="slider__wrapper">
+                                    <div class="slider__items">
+                                        <div class="slider__item">
+                                            <!-- Контент 1 слайда -->
+                                            <div class="first__slider-1">
+                                                <div class="slider1-item">
+                                                    <img src="assets/img/catalog1.png" alt="Фото товара">
+                                                    <p class="slider1-orange">Ваша оптовая <br>
+                                                        цена покупки: 1100 ₽</p>
+                                                    <p class="slider1-subtitle">Ваша цена продажи на <br>
+                                                        маркетплейсах: <span>1885 ₽</span></p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                  </div>
-                                  <div class="slider__item">
-                                    <!-- Контент 2 слайда -->
-                                    <div class="first__slider-1">
-                                        <div class="slider1-item">
-                                            <img src="assets/img/catalog2.png" alt="Фото товара">
-                                            <p class="slider1-orange">Ваша оптовая <br>
-                                                цена покупки: 650 ₽</p>
-                                            <p class="slider1-subtitle">Ваша цена продажи на <br>
-                                                маркетплейсах: <span>2155 ₽</span></p>
+                                        <div class="slider__item">
+                                            <!-- Контент 2 слайда -->
+                                            <div class="first__slider-1">
+                                                <div class="slider1-item">
+                                                    <img src="assets/img/catalog2.png" alt="Фото товара">
+                                                    <p class="slider1-orange">Ваша оптовая <br>
+                                                        цена покупки: 650 ₽</p>
+                                                    <p class="slider1-subtitle">Ваша цена продажи на <br>
+                                                        маркетплейсах: <span>2155 ₽</span></p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                  </div>
 
-                                  <div class="slider__item">
-                                    <!-- Контент 3 слайда -->
-                                    <div class="first__slider-1">
-                                        <div class="slider1-item">
-                                            <img src="assets/img/catalog3.png" alt="Фото товара">
-                                            <p class="slider1-orange">Ваша оптовая <br>
-                                                цена покупки: 650 ₽</p>
-                                            <p class="slider1-subtitle">Ваша цена продажи на <br>
-                                                маркетплейсах: <span>2155 ₽</span></p>
+                                        <div class="slider__item">
+                                            <!-- Контент 3 слайда -->
+                                            <div class="first__slider-1">
+                                                <div class="slider1-item">
+                                                    <img src="assets/img/catalog3.png" alt="Фото товара">
+                                                    <p class="slider1-orange">Ваша оптовая <br>
+                                                        цена покупки: 650 ₽</p>
+                                                    <p class="slider1-subtitle">Ваша цена продажи на <br>
+                                                        маркетплейсах: <span>2155 ₽</span></p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                  </div>
 
-                                  <div class="slider__item">
-                                    <!-- Контент 4 слайда -->
-                                    <div class="first__slider-1">
-                                        <div class="slider1-item">
-                                            <img src="assets/img/catalog4.png" alt="Фото товара">
-                                            <p class="slider1-orange">Ваша оптовая <br>
-                                                цена покупки: 1100 ₽</p>
-                                            <p class="slider1-subtitle">Ваша цена продажи на <br>
-                                                маркетплейсах: <span>5386 ₽</span></p>
+                                        <div class="slider__item">
+                                            <!-- Контент 4 слайда -->
+                                            <div class="first__slider-1">
+                                                <div class="slider1-item">
+                                                    <img src="assets/img/catalog4.png" alt="Фото товара">
+                                                    <p class="slider1-orange">Ваша оптовая <br>
+                                                        цена покупки: 1100 ₽</p>
+                                                    <p class="slider1-subtitle">Ваша цена продажи на <br>
+                                                        маркетплейсах: <span>5386 ₽</span></p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                  </div>
 
-                                  <div class="slider__item">
-                                    <!-- Контент 5 слайда -->
-                                    <div class="first__slider-1">
-                                        <div class="slider1-item">
-                                            <img src="assets/img/catalog5.png" alt="Фото товара">
-                                            <p class="slider1-orange">Ваша оптовая <br>
-                                                цена покупки: 550 ₽</p>
-                                            <p class="slider1-subtitle">Ваша цена продажи на <br>
-                                                маркетплейсах: <span>2571 ₽</span></p>
+                                        <div class="slider__item">
+                                            <!-- Контент 5 слайда -->
+                                            <div class="first__slider-1">
+                                                <div class="slider1-item">
+                                                    <img src="assets/img/catalog5.png" alt="Фото товара">
+                                                    <p class="slider1-orange">Ваша оптовая <br>
+                                                        цена покупки: 550 ₽</p>
+                                                    <p class="slider1-subtitle">Ваша цена продажи на <br>
+                                                        маркетплейсах: <span>2571 ₽</span></p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                  </div>
 
-                                  <div class="slider__item">
-                                    <!-- Контент 6 слайда -->
-                                    <div class="first__slider-1">
-                                        <div class="slider1-item">
-                                            <img src="assets/img/catalog6.png" alt="Фото товара">
-                                            <p class="slider1-orange">Ваша оптовая <br>
-                                                цена покупки: 900 ₽</p>
-                                            <p class="slider1-subtitle">Ваша цена продажи на <br>
-                                                маркетплейсах: <span>2570 ₽</span></p>
+                                        <div class="slider__item">
+                                            <!-- Контент 6 слайда -->
+                                            <div class="first__slider-1">
+                                                <div class="slider1-item">
+                                                    <img src="assets/img/catalog6.png" alt="Фото товара">
+                                                    <p class="slider1-orange">Ваша оптовая <br>
+                                                        цена покупки: 900 ₽</p>
+                                                    <p class="slider1-subtitle">Ваша цена продажи на <br>
+                                                        маркетплейсах: <span>2570 ₽</span></p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                  </div>
 
-                                  <div class="slider__item">
-                                    <!-- Контент 7 слайда -->
-                                    <div class="first__slider-1">
-                                        <div class="slider1-item">
-                                            <img src="assets/img/catalog7.png" alt="Фото товара">
-                                            <p class="slider1-orange">Ваша оптовая <br>
-                                                цена покупки: 650 ₽</p>
-                                            <p class="slider1-subtitle">Ваша цена продажи на <br>
-                                                маркетплейсах: <span>1710 ₽</span></p>
+                                        <div class="slider__item">
+                                            <!-- Контент 7 слайда -->
+                                            <div class="first__slider-1">
+                                                <div class="slider1-item">
+                                                    <img src="assets/img/catalog7.png" alt="Фото товара">
+                                                    <p class="slider1-orange">Ваша оптовая <br>
+                                                        цена покупки: 650 ₽</p>
+                                                    <p class="slider1-subtitle">Ваша цена продажи на <br>
+                                                        маркетплейсах: <span>1710 ₽</span></p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                  </div>
 
-                                  <div class="slider__item">
-                                    <!-- Контент 8 слайда -->
-                                    <div class="first__slider-1">
-                                        <div class="slider1-item">
-                                            <img src="assets/img/catalog8.png" alt="Фото товара">
-                                            <p class="slider1-orange">Ваша оптовая <br>
-                                                цена покупки: 750 ₽</p>
-                                            <p class="slider1-subtitle">Ваша цена продажи на <br>
-                                                маркетплейсах: <span>1800 ₽</span></p>
+                                        <div class="slider__item">
+                                            <!-- Контент 8 слайда -->
+                                            <div class="first__slider-1">
+                                                <div class="slider1-item">
+                                                    <img src="assets/img/catalog8.png" alt="Фото товара">
+                                                    <p class="slider1-orange">Ваша оптовая <br>
+                                                        цена покупки: 750 ₽</p>
+                                                    <p class="slider1-subtitle">Ваша цена продажи на <br>
+                                                        маркетплейсах: <span>1800 ₽</span></p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                  </div>
-                    
 
-                    
+
+
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                        
-                          </div>
+
+                        </div>
 
                         <h2 class="catalog__title element-animation">Хотите увидеть всю продукцию?</h2>
 
@@ -505,7 +497,8 @@
                         <h2 class="element-animation">Три бренда в ассортименте и более 120 <br>
                             игрушек которые САМИ себя продают!</h2>
 
-                        <h3 class="element-animation">В наших игрушках упор делается на качество во всем — это и хорошая <br>
+                        <h3 class="element-animation">В наших игрушках упор делается на качество во всем — это и хорошая
+                            <br>
                             древесина, и фанера, и качественные/безвредные лаки и краски, и даже <br>
                             упаковка - плотная и яркая, приятно держать в руках</h3>
 
@@ -536,7 +529,7 @@
                         </div>
 
                         <div class="brand__list-item">
-                            
+
                             <div class="brand__list-item-text">
                                 <h2>Разработаны с учетом рекомендаций <br>
                                     ведущих детских психологов, в т.ч. <br>
@@ -591,7 +584,7 @@
                                     договоритесь с нами о встрече и приезжайте в офис
                                     и шоурум, где выложены большинство наших игрушек.
                                     Можно фотографировать, снимать видео и доставать
-                                    игрушки из коробок.                               
+                                    игрушки из коробок.
                                 </p>
 
                                 <p>Если вы находитесь не в Москве, мы можем прислать
@@ -604,7 +597,7 @@
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
         </section>
 
         <section id="some">
@@ -612,7 +605,8 @@
                 <div class="some__wrapper">
                     <div class="some__inner">
                         <h2 class="some__title element-animation">Некоторые наши оптовые клиенты</h2>
-                        <p class="some__subtitle element-animation">За более чем 15 лет работы, мы работаем с более чем 5000 клиентами по всей России:<br>
+                        <p class="some__subtitle element-animation">За более чем 15 лет работы, мы работаем с более чем
+                            5000 клиентами по всей России:<br>
                             от небольших предпринимателей до крупных федеральных сетей</p>
 
                         <div class="some__grid">
@@ -647,7 +641,7 @@
                             <div class="some__grid-item element-animation">
                                 <img src="assets/img/some8.png" alt="Фото товара">
                             </div>
-                            
+
                             <div class="some__grid-item element-animation">
                                 <img src="assets/img/some9.png" alt="Фото товара">
                             </div>
@@ -667,113 +661,111 @@
                 по вашим чертежам при тираже от 3000 ед.</h2>
 
             <div class='marquee' style='overflow:hidden'>
-              <ul>
-                <li>картон</li>
-                <li>каучук-гевея</li>
-                <li>бук</li>
-                <li>березовая фанера</li>
-                <li>пластик</li>
-                <li>гиппоаллергенные ткани</li>
-                <li>картон</li>
-                <li>каучук-гевея</li>
-                <li>бук</li>
-                <li>березовая фанера</li>
-                <li>пластик</li>
-                <li>гиппоаллергенные ткани</li>
-                <li>картон</li>
-                <li>каучук-гевея</li>
-                <li>бук</li>
-                <li>березовая фанера</li>
-                <li>пластик</li>
-                <li>гиппоаллергенные ткани</li>
-                
-              </ul>
+                <ul>
+                    <li>картон</li>
+                    <li>каучук-гевея</li>
+                    <li>бук</li>
+                    <li>березовая фанера</li>
+                    <li>пластик</li>
+                    <li>гиппоаллергенные ткани</li>
+                    <li>картон</li>
+                    <li>каучук-гевея</li>
+                    <li>бук</li>
+                    <li>березовая фанера</li>
+                    <li>пластик</li>
+                    <li>гиппоаллергенные ткани</li>
+                    <li>картон</li>
+                    <li>каучук-гевея</li>
+                    <li>бук</li>
+                    <li>березовая фанера</li>
+                    <li>пластик</li>
+                    <li>гиппоаллергенные ткани</li>
+
+                </ul>
             </div>
 
             <div class="slider slider2 desktop">
                 <div class="slider__container">
-                  <div class="slider__wrapper">
-                    <div class="slider__items">
-                      <div class="slider__item">
-                        <!-- Контент 1 слайда -->
-                        <div class="second__slider-1">
-                          <div class="second__slider-1-left">
-                            <h2>9000 м2</h2>
-                            <h2>Производственные<br>мощности</h2>
-        
-                          </div>
-                          <div class="second__slider-1-right">
-                            <img src="assets/img/slide2-1.png">
-                          </div>
+                    <div class="slider__wrapper">
+                        <div class="slider__items">
+                            <div class="slider__item">
+                                <!-- Контент 1 слайда -->
+                                <div class="second__slider-1">
+                                    <div class="second__slider-1-left">
+                                        <h2>9000 м2</h2>
+                                        <h2>Производственные<br>мощности</h2>
+
+                                    </div>
+                                    <div class="second__slider-1-right">
+                                        <img src="assets/img/slide2-1.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <!-- Контент 2 слайда -->
+                                <div class="second__slider-1">
+                                    <div class="second__slider-1-left">
+                                        <h2>250 000</h2>
+                                        <h2>Игрушек в месяц</h2>
+
+
+                                    </div>
+                                    <div class="second__slider-1-right">
+                                        <img src="assets/img/slide2-2.png">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider__item">
+                                <!-- Контент 3 слайда -->
+                                <div class="second__slider-1">
+                                    <div class="second__slider-1-left">
+                                        <h2>97</h2>
+                                        <h2>Сотрудников</h2>
+
+                                    </div>
+                                    <div class="second__slider-1-right">
+                                        <img src="assets/img/slide2-3.png">
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                      </div>
-                      <div class="slider__item">
-                        <!-- Контент 2 слайда -->
-                        <div class="second__slider-1">
-                          <div class="second__slider-1-left">
-                            <h2>250 000</h2>
-                            <h2>Игрушек в месяц</h2>
-        
-        
-                          </div>
-                          <div class="second__slider-1-right">
-                            <img src="assets/img/slide2-2.png">
-                          </div>
-                        </div>
-                      </div>
-        
-                      <div class="slider__item">
-                        <!-- Контент 3 слайда -->
-                        <div class="second__slider-1">
-                          <div class="second__slider-1-left">
-                            <h2>97</h2>
-                            <h2>Сотрудников</h2>
-        
-                          </div>
-                          <div class="second__slider-1-right">
-                            <img src="assets/img/slide2-3.png">
-                          </div>
-                        </div>
-                      </div>
-        
                     </div>
-                  </div>
                 </div>
                 <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-                <div
-                  style="background-image: url('assets/img/leftarrow.svg'); background-position: center center; left: 0px; width: 180px;"
-                  href="#" id="arrow-2-1" class="slider__control slider__control-first" data-slide="prev"></div>
-                <div
-                  style="background-image: url('assets/img/rightarrow.svg'); background-position: center center; right: 0px; width: 180px"
-                  id="arrow-2-2" href="#" class="slider__control slider__control-first" data-slide="next"></div>
-        
-              </div>
-        
-              <div class="mobile__slider-pic">
-        
+                <div style="background-image: url('assets/img/leftarrow.svg'); background-position: center center; left: 0px; width: 180px;"
+                    href="#" id="arrow-2-1" class="slider__control slider__control-first" data-slide="prev"></div>
+                <div style="background-image: url('assets/img/rightarrow.svg'); background-position: center center; right: 0px; width: 180px"
+                    id="arrow-2-2" href="#" class="slider__control slider__control-first" data-slide="next"></div>
+
+            </div>
+
+            <div class="mobile__slider-pic">
+
                 <div class="second__slider-1-left">
-                  <h2>9000 м2</h2>
-                  <h2>Производственные <br> мощности</h2>
-                  <img src="assets/img/slide2-1.png">
-        
+                    <h2>9000 м2</h2>
+                    <h2>Производственные <br> мощности</h2>
+                    <img src="assets/img/slide2-1.png">
+
                 </div>
-        
+
                 <div class="second__slider-1-left">
-                  <h2>250 000</h2>
-                  <h2>Игрушек в месяц</h2>
-        
-                  <img src="assets/img/slide2-2.png">
+                    <h2>250 000</h2>
+                    <h2>Игрушек в месяц</h2>
+
+                    <img src="assets/img/slide2-2.png">
                 </div>
-        
-        
-        
+
+
+
                 <div class="second__slider-1-left">
-                  <h2>97</h2>
-                  <h2>Сотрудиков</h2>
-                  <img src="assets/img/slide2-3.png">
-        
+                    <h2>97</h2>
+                    <h2>Сотрудиков</h2>
+                    <img src="assets/img/slide2-3.png">
+
                 </div>
-              </div>
+            </div>
         </section>
 
         <section id="text">
@@ -785,22 +777,25 @@
                             <h2>Крупнейший экспортно-ориентированный <br>
                                 завод деревянных игрушек</h2>
                             <p>
-                            Наша фабрика основана в 2012 году. Занимается серийным производством продукции,
-                            представляет собой линейное производство полного цикла. Включает в себя: фрезерование,
-                            шлифование, лазерную резку, 3D-печать, шитье, термоперенос, шелкографию, УФ-печать,
-                            порошковое покрытие, гибку проволоки, контроль качества, упаковку, исследования и разработки,
-                            прототипирование и промышленное проектирование.
+                                Наша фабрика основана в 2012 году. Занимается серийным производством продукции,
+                                представляет собой линейное производство полного цикла. Включает в себя: фрезерование,
+                                шлифование, лазерную резку, 3D-печать, шитье, термоперенос, шелкографию, УФ-печать,
+                                порошковое покрытие, гибку проволоки, контроль качества, упаковку, исследования и
+                                разработки,
+                                прототипирование и промышленное проектирование.
                             </p>
 
                             <p>Компания производит более 100 видов инновационных развивающих игрушек, наборы для
-                                детских садов и школ. Оказывает услуги по разработке и контрактному производству продукции.
+                                детских садов и школ. Оказывает услуги по разработке и контрактному производству
+                                продукции.
                                 В 2021 году компания вошла в десятку крупнейших экспортеров деревянных игрушек в Китае
-                                в провинции Чжэцзян уезда Юньхэ, где расположен кластер заводов по производству деревянных изделий.</p>
-                                
+                                в провинции Чжэцзян уезда Юньхэ, где расположен кластер заводов по производству
+                                деревянных изделий.</p>
+
                             <div class="text__inner-text-bottom">
                                 <p><b>Производство сертифицированно <br>
-                                    в соответствии со следующими <br>
-                                    стандартами:</b></p>
+                                        в соответствии со следующими <br>
+                                        стандартами:</b></p>
 
                                 <img src="assets/img/text-bottom1.png" alt="Фирмы">
                             </div>
@@ -825,29 +820,33 @@
 
         <section class="third__slider">
             <div class="slider-container">
-              <div class="slider-top">
-                <div class="slider-buttons">
-                  <button style="border: 0; background-position: center center; background-size: 100% 100%; width: 35px; left: 35px;" class="swiper-button-prev"></button>
-                  <button style="border: 0; background-position: center center; background-size: 100% 100%; width: 35px; right: 35px;" class="swiper-button-next"></button>
+                <div class="slider-top">
+                    <div class="slider-buttons">
+                        <button
+                            style="border: 0; background-position: center center; background-size: 100% 100%; width: 35px; left: 35px;"
+                            class="swiper-button-prev"></button>
+                        <button
+                            style="border: 0; background-position: center center; background-size: 100% 100%; width: 35px; right: 35px;"
+                            class="swiper-button-next"></button>
+                    </div>
                 </div>
-              </div>
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
-                      src="assets/img/slide-1.png"></div>
-                  <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
-                      src="assets/img/slide-2.png"></div>
-                  <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
-                      src="assets/img/slide-3.png"></div>
-                  <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
-                      src="assets/img/slide-4.png"></div>
-                </div>
-      
-              </div>
-            </div>
-          </section>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
+                                src="assets/img/slide-1.png"></div>
+                        <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
+                                src="assets/img/slide-2.png"></div>
+                        <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
+                                src="assets/img/slide-3.png"></div>
+                        <div class="swiper-slide card"><img style="width: 100%; border-radius: 40px"
+                                src="assets/img/slide-4.png"></div>
+                    </div>
 
-        
+                </div>
+            </div>
+        </section>
+
+
 
         <section id="how">
             <div class="how">
@@ -863,7 +862,8 @@
                                 Мы так не делаем. ООО «МДИ» (Мир деревянных игрушек) хоть и занимается оптовым <br>
                                 и производственным бизнесом, но это полностью прозрачная компания, <br>
                                 зарегистрированная в 2007 году и работающая в России уже 15 лет. <br>
-                                Можете проверить сами: ООО «МДИ», номер ИНН: <b>3808161540</b>, ОГРН: <b>1073808001453</b>
+                                Можете проверить сами: ООО «МДИ», номер ИНН: <b>3808161540</b>, ОГРН:
+                                <b>1073808001453</b>
                             </p>
 
                             <p>Правильные, обстоятельные, профессионально составленные договоры, <br>
@@ -894,11 +894,11 @@
         </div>
     </footer>
 
-      <!-- Slider JavaScript -->
+    <!-- Slider JavaScript -->
     <script src="assets/js/chief-slider.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
 
-        <!-- Morquee JavaScript -->
+    <!-- Morquee JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 
@@ -906,12 +906,12 @@
     <script src="assets/js/jquery.activity.min.js"></script>
     <script>
         $('body').activity({
-                'achieveTime':60,
-                'testPeriod':10,
-                useMultiMode: 1,
-                callBack: function (e) {
-			ym(89618475,'reachGoal','60sec')
-                }
+            'achieveTime': 60,
+            'testPeriod': 10,
+            useMultiMode: 1,
+            callBack: function (e) {
+                ym(89618475, 'reachGoal', '60sec')
+            }
         });
     </script>
 
